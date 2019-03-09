@@ -11,22 +11,22 @@
         require 'src/SMTP.php';
           $mail = new PHPMailer\PHPMailer\PHPMailer;
           $mail->IsSMTP(); // enable SMTP
-          $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+          $mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
           $mail->SMTPAuth = true; // authentication enabled
           $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
           $mail->Host = "smtp.gmail.com";
           $mail->Port = 587; // or 587
           $mail->IsHTML(true);
-          $mail->Username = "bhavyamendiratta1999@gmail.com";
-          $mail->Password = "FARIDABADHARYANA";
-          $mail->SetFrom("bhavyamendiratta1999@gmail.com","prabhjotsingh.co.in");
+          $mail->Username = "noreplyprabhjot@gmail.com";
+          $mail->Password = "NOREPLYprabhjot";
+          $mail->SetFrom("noreplyprabhjot@gmail.com","prabhjotsingh.co.in");
           $mail->Subject = $name;
           $mail->Body ="<h4>First Name: $name</h4><br>
                         <h4>Last Name: $surname</h4><br>
                         <h4>Email: $email</h4><br>
                         <h4>Phone: $phone</h4><br>
                         <h4>Message: $message</h4>";
-          $mail->AddAddress("namanvashistha15@gmail.com","naman");
+          $mail->AddAddress("prabhjotsinghahluwalia@gmail.com","Prabhjot Singh");
            if(!$mail->Send()) {
               echo "Mailer Error: " . $mail->ErrorInfo;
            }
@@ -158,7 +158,7 @@ body {
   width: 70px;
   height: 70px;
   bottom: 30px;
-  right: 30px;
+  right: 1px;
   z-index: 999;
 }
 
@@ -227,7 +227,7 @@ body {
 
 .nd1{
   background: 
-  right: 40px;
+  right: 50%;
   bottom: 120px;
   animation-delay: 0.2s;
     animation: bounce-out-nds 0.3s linear;
@@ -238,7 +238,7 @@ body {
 
 .nd4{
   background: 
-  right: 40px;
+  right: 50%;
   bottom: 240px;
   animation-delay: 0.1s;
     animation: bounce-out-nds 0.1s linear;
@@ -304,7 +304,7 @@ body {
   top: 0;
   bottom: 0;
   margin: auto;
-  right: 20px;
+  right: 1px;
 }
 </style>
         
@@ -332,12 +332,12 @@ body {
     </header>
     <!-- Intro Image -->
    <br><br>
-  <img class="mySlides" src="test1/1.jpeg"   width="100%">
-  <img class="mySlides" src="test1/2.jpeg"   width="100%">
-  <img class="mySlides" src="test1/3.jpg"   width="100%">
+  <img class="mySlides" src="test1/1.jpeg"   width="100%" >
+  <img class="mySlides" src="test1/2.jpeg"   width="100%" >
+  <img class="mySlides" src="test1/3.jpg"   width="100%" >
   <img class="mySlides" src="test1/4.jpeg"   width="100%">
   <img class="mySlides" src="test1/5.jpeg"   width="100%">
-  <img class="mySlides" src="test1/6.jpg"   width="100%">
+  <img class="mySlides" src="test1/6.jpg"   width="100%" >
 
 <script>
 var myIndex = 0;
@@ -489,7 +489,7 @@ platforms through which he realises his vision of empowering one and all.</p>
 
   
   <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="contract@gmail.com"><img class="reminder">
-    <p class="letter"><a href="mailto:prabhjotsinghahluwalia@gmail.com?subject=Website%20Response&amp;body=Hey%20Prabhjot"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></p>
+    <p class="letter"><a href="mailto:prabhjotsinghahluwalia@gmail.com?subject=&amp;body=Hey%20Prabhjot"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></p>
   </div>
   <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Edoardo@live.it"><img class="reminder">
     <p class="letter"><a href="https://api.whatsapp.com/send?phone=919654773334&amp;text=Hi%20Prabhjot"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></p>
